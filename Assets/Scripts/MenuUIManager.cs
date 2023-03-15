@@ -2,10 +2,11 @@ using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class MenuUIManager : MonoBehaviour
 {
-
+    
     [SerializeField] GameObject eventPanelUserInRange;
     [SerializeField] GameObject eventPanelUserNotInRange;
     bool isUIPanelActive;
@@ -15,16 +16,9 @@ public class MenuUIManager : MonoBehaviour
     [SerializeField] private EventManager eventManager;
 
     // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+    
 
     public void DisplayEventPanel(int eventID) {
         tempEvent = eventID;
@@ -38,6 +32,7 @@ public class MenuUIManager : MonoBehaviour
         }
         
     }
+
 
     public void onJoinButtonClick() {
         eventManager.ActivateEvent(tempEvent);
