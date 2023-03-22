@@ -14,7 +14,7 @@ public class EventManager : MonoBehaviour
         if(eventID == 1)
         {
             //SceneManager.LoadScene("SceneForEvent1");
-            SceneManager.LoadScene("MossArts");
+            SceneManager.LoadScene("ClueForNewman");
 
         }
     }
