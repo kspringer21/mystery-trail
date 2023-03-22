@@ -11,12 +11,28 @@ public class EventManager : MonoBehaviour
     // Activates event and launches scene if the event is within range and the user selects "join"
     public void ActivateEvent(int eventID)
     {
-        if(eventID == 1)
+        if (eventID == 1)
         {
             //SceneManager.LoadScene("SceneForEvent1");
-            SceneManager.LoadScene("ClueForNewman");
+            SceneManager.LoadScene("BurrusInfo");
 
         }
+        else
+        {
+            if (eventID == 2)
+            {
+                SceneManager.LoadScene("DrillfieldInfo");
+            }
+            else
+            {
+                if (eventID == 3)
+                {
+                    SceneManager.LoadScene("NewmanInfo");
+                }
+            }
+        }
+
+
     }
 
 
