@@ -2,60 +2,52 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using TMPro;
+using System;
 
 
 public class MultipleChoice : MonoBehaviour
 {
-    public string question;
-    public string[] answers;
+    public TMP_Text question;
+    public TMP_Text correctText;
+    public TMP_Text incorrectText;
+
+    public GameObject[] answers;
+    public GameObject next;
+    public GameObject goBack;
     public int correctAnswer; 
 
-    enum State { Question, TryAgain, Close };
-    State state = State.Question;
+    public void ChoiceOptionCorrect(){
+        question.gameObject.SetActive(false);
+        correctText.gameObject.SetActive(true);
+        answers[0].SetActive(false);
+        answers[1].SetActive(false);
+        answers[2].SetActive(false);
+        answers[3].SetActive(false);
+        next.SetActive(true);
 
-    void OnGUI()
-    {
-        switch (state) {
-            case State.Question:
-                DoQuestion();
-                break;
-            case State.TryAgain:
-                DoTryAgain();
-                break;
-            case State.Close:
-                DoClose();
-                break;
-        }
+    }
+
+     public void ChoiceOptionIncorrect(){
+        question.gameObject.SetActive(false);
+        incorrectText.gameObject.SetActive(true);
+        answers[0].SetActive(false);
+        answers[1].SetActive(false);
+        answers[2].SetActive(false);
+        answers[3].SetActive(false);
+        goBack.SetActive(true);
     }
     
-    void DoQuestion()
-    {
-        GUILayout.Label(question);
-        for (int i = 0; i &lt; answers.Length; ++i) {
-            if (GUILayout.Button(answers[i])) {
-                if (i == correctAnswer) {
-                    state = State.Close;
-                } else {
-                    state = State.TryAgain;
-                }
-            }
-        }
+    public void redisplayQuestion(){
+        question.gameObject.SetActive(true);
+        incorrectText.gameObject.SetActive(false);
+        answers[0].SetActive(true);
+        answers[1].SetActive(true);
+        answers[2].SetActive(true);
+        answers[3].SetActive(true);
+        goBack.SetActive(false);
+
     }
 
-    void DoTryAgain()
-    {
-        GUILayout.Label("Wrong answer.");
-        if (GUILayout.Button("Press to try again...")) {
-            state = State.Question;
-        }
-    }
-
-    void DoClose()
-    {
-        GUILayout.Label("Correct!");
-        if (GUILayout.Button("Close")) {
-            // Whatever you want to do here (e.g. call Application.Quit()).
-        }
-    }
 
 }
