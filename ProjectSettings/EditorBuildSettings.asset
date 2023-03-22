@@ -17,4 +17,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/MossArts.unity
     guid: f8b64a9a47cef4e4a8327e42c8f483e9
+  - enabled: 1
+    path: Assets/Scenes/InstructionsScene.unity
+    guid: 8140cbff263fbcb42962fca09c529870
   m_configObjects: {}
