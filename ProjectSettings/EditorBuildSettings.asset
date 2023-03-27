@@ -15,8 +15,14 @@ EditorBuildSettings:
     path: Assets/Scenes/MossArts.unity
     guid: f8b64a9a47cef4e4a8327e42c8f483e9
   - enabled: 1
+    path: Assets/Scenes/MainInstructions.unity
+    guid: 0af387f8507cc244f913cd91c02dd91a
+  - enabled: 1
     path: Assets/Scenes/ClueForDrillfield.unity
     guid: 1a6e3ae9b284a824f9ce453548c2f78c
+  - enabled: 1
+    path: Assets/Scenes/SecondInstructions.unity
+    guid: 15cbfd47d897c64429a16570282f8bb1
   - enabled: 1
     path: Assets/Scenes/ClueForNewman.unity
     guid: 1ab766effdf9dfc4cae6108abeac7220
