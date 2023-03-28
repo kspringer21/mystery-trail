@@ -36,7 +36,12 @@ public class EventPointer : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        FloatAndRotatePointer();
+        if((eventID-1)!=Mapbox.Examples.SpawnPOIsOnMap.poiIndex){
+            gameObject.GetComponent<BoxCollider>().enabled=false;
+        }
+        else{
+            FloatAndRotatePointer();
+        }
     }
 
     void FloatAndRotatePointer()

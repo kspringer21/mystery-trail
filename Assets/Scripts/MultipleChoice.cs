@@ -25,7 +25,7 @@ public class MultipleChoice : MonoBehaviour
         answers[2].SetActive(false);
         answers[3].SetActive(false);
         next.SetActive(true);
-
+        Mapbox.Examples.SpawnPOIsOnMap.poiIndex += 1;
     }
 
      public void ChoiceOptionIncorrect(){

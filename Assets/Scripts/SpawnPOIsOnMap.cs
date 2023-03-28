@@ -40,6 +40,8 @@ namespace Mapbox.Examples
 
         GeoCoordinate[] POIList;
 
+        public static int poiIndex;
+
         void Start()
         {
              ReadFile();
@@ -62,6 +64,9 @@ namespace Mapbox.Examples
                 instance.transform.localPosition = _map.GeoToWorldPosition(POIList[i].Location, true);
                 instance.transform.localScale = new Vector3(_spawnScale, _spawnScale, _spawnScale);
                 _spawnedObjects.Add(instance);
+                if(i!=0){
+                    _spawnedObjects[i].SetActive(false);
+                }
             }
         }
 
@@ -75,6 +80,14 @@ namespace Mapbox.Examples
                 var location = POIList[i].Location;
                 spawnedObject.transform.localPosition = _map.GeoToWorldPosition(location, true);
                 spawnedObject.transform.localScale = new Vector3(_spawnScale, _spawnScale, _spawnScale);
+                if(i<=poiIndex){
+                     _spawnedObjects[i].SetActive(true);
+                }
+                else{
+                    _spawnedObjects[i].SetActive(false);
+                }
+
+
             }
         }
 
@@ -105,6 +118,13 @@ namespace Mapbox.Examples
         }
 
 
+        public void POIVisible(){
+
+        }
+        
+        public void POIInteractable(){
+
+        }
 
 
     }
