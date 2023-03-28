@@ -5,7 +5,7 @@ using UnityEngine.SceneManagement;// this allows us to load the scene in Activat
 
 public class EventManager : MonoBehaviour
 {
-    double minimumDistanceToAccess = 1.2;
+    double minimumDistanceToAccess = 0.1;
 
 
     // Activates event and launches scene if the event is within range and the user selects "join"
