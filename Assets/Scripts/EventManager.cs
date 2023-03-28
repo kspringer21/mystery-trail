@@ -27,7 +27,28 @@ public class EventManager : MonoBehaviour
             {
                 if (eventID == 3)
                 {
-                    SceneManager.LoadScene("NewmanInfo");
+                    SceneManager.LoadScene("PylonsInfo");
+                }
+                else
+                {
+                    if(eventID == 4)
+                    {
+                        SceneManager.LoadScene("NewmanInfo");
+                    }
+                    else
+                    {
+                        if(eventID == 5)
+                        {
+                            SceneManager.LoadScene("BookstoreInfo");
+                        }
+                        else
+                        {
+                            if(eventID == 6)
+                            {
+                                SceneManager.LoadScene("SquiresInfo");
+                            }
+                        }
+                    }
                 }
             }
         }

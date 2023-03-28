@@ -12,6 +12,30 @@ EditorBuildSettings:
     path: Assets/Scenes/Story.unity
     guid: 2660788705188e045b90bb5f3bd55a80
   - enabled: 1
+    path: Assets/Scenes/ClueForNewman.unity
+    guid: 1884aa5d25094db419f04dfd259785f4
+  - enabled: 1
+    path: Assets/Scenes/PylonsInfo.unity
+    guid: 402560cfe63ce454ea6bb7f639295e60
+  - enabled: 1
+    path: Assets/Scenes/SquiresInfo.unity
+    guid: 4ef7198a0a8ddcf4186a388dbc64aec8
+  - enabled: 1
+    path: Assets/Scenes/ClueForSquires.unity
+    guid: abca48bae3b562e418fd2e83ec981e68
+  - enabled: 1
+    path: Assets/Scenes/EndGame.unity
+    guid: 5eb6e5da05cfae24e888caf86dbd2a1f
+  - enabled: 1
+    path: Assets/Scenes/ClueForPylons.unity
+    guid: da28717bc8a6c7f429a88b9ddf4e72d5
+  - enabled: 1
+    path: Assets/Scenes/BookstoreInfo.unity
+    guid: 721a44f763a82d849ba455cdb73561af
+  - enabled: 1
+    path: Assets/Scenes/ClueForBookstore.unity
+    guid: 508befbea71eb4347bc479dce06e18c6
+  - enabled: 1
     path: Assets/Scenes/MossArts.unity
     guid: f8b64a9a47cef4e4a8327e42c8f483e9
   - enabled: 1
@@ -23,9 +47,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/SecondInstructions.unity
     guid: 15cbfd47d897c64429a16570282f8bb1
-  - enabled: 1
-    path: Assets/Scenes/ClueForNewman.unity
-    guid: 1ab766effdf9dfc4cae6108abeac7220
+  - enabled: 0
+    path: 
+    guid: 00000000000000000000000000000000
   - enabled: 1
     path: Assets/Scenes/NewmanInfo.unity
     guid: a168a7b18a2b7ca49bc2b998c89633a6
