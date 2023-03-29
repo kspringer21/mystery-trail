@@ -1,8 +1,12 @@
 using UnityEngine;
 using UnityEngine.UI;
+using System.Collections;  
+using System.Collections.Generic; 
+using TMPro;
+
  
 public class RadialProgress : MonoBehaviour {
-	public Text ProgressIndicator;
+	public TMP_Text ProgressIndicator;
 	public Image LoadingBar;
 	float currentValue;
 	public float speed;
