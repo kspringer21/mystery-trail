@@ -91,7 +91,7 @@ namespace Mapbox.Examples
             }
         }
 
-        private void ReadFile()
+        /*private void ReadFile()
         {
             List<GeoCoordinate> tempPOIList = new List<GeoCoordinate>();
 
@@ -115,15 +115,47 @@ namespace Mapbox.Examples
             }
 
             POIList = tempPOIList.ToArray();
-        }
+        }*/
 
 
-        public void POIVisible(){
+       private void ReadFile()
+        {
+            Debug.Log("DH1 " + "About to start reading file");
+            try
+            {
+                List<GeoCoordinate> tempPOIList = new List<GeoCoordinate>();
 
-        }
-        
-        public void POIInteractable(){
+                // Read each line of the file into a string array. Each element
+                // of the array is one line of the file.
+                TextAsset myFile = (TextAsset)Resources.Load("PointsOfInterest");
+                Debug.Log(myFile.ToString());
+                string[] lines = myFile.text.Split("\n");
+                Debug.Log("lines "+lines.Length.ToString());
+                Debug.Log("lines [0]" + lines[0]);
 
+                //string[] lines = System.IO.File.ReadAllLines(@"Assets/Resources/PointsOfInterest.txt");
+
+                // Display the file contents by using a foreach loop.
+
+                Debug.Log("DH1 " + "Reading of POI File started");
+                foreach (string line in lines)
+                {
+                    string pattern = @",\s*";
+                    string[] data = Regex.Split(line, pattern);
+                    string name = data[0];
+
+                    string latitude = data[1];
+                    string longitude = data[2];
+                    string status = "";
+                    tempPOIList.Add(new GeoCoordinate(name, Conversions.StringToLatLon(latitude + ", " + longitude), status)); // creates a geocoord object and adds to list
+                }
+                POIList = tempPOIList.ToArray();
+            }
+            catch (System.Exception e) {
+                Debug.Log("DH1 " + "Exception in ReadFile " + e.ToString());
+            }
+            Debug.Log("DH1 "+"Reading of POI File completed");
+            
         }
 
 
