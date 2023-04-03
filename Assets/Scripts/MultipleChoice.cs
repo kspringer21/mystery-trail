@@ -26,6 +26,8 @@ public class MultipleChoice : MonoBehaviour
         answers[3].SetActive(false);
         next.SetActive(true);
         Mapbox.Examples.SpawnPOIsOnMap.poiIndex += 1;
+        RadialProgress.currentValue = RadialProgress.currentValue + (float)16.1667;
+        Debug.Log(RadialProgress.currentValue);
     }
 
      public void ChoiceOptionIncorrect(){
