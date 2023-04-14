@@ -21,6 +21,9 @@ EditorBuildSettings:
     path: Assets/Scenes/SquiresInfo.unity
     guid: 4ef7198a0a8ddcf4186a388dbc64aec8
   - enabled: 1
+    path: Assets/Scenes/Poster.unity
+    guid: 20a15a47c7acfc943b92f4df24053393
+  - enabled: 1
     path: Assets/Scenes/ClueForSquires.unity
     guid: abca48bae3b562e418fd2e83ec981e68
   - enabled: 1
