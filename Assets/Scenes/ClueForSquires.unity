@@ -1498,8 +1498,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: This space contains two ballrooms, a 510-seat theater, a food court, a
-    bowling alley, and an art gallery! Ring dance is also held here.
+  m_text: A professor in the music department caught a glimpse of the hokie bird
+    entering the breakzone at this location
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}

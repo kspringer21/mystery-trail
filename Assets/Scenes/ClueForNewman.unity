@@ -1486,8 +1486,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: This location holds over 2 million volumes. A lot of students tend to come
-    here and study with groups!
+  m_text: A group of students studying for their exam spotted the hokie bird getting
+    coffee at the coffee shop located here, EspressOasis!
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}

@@ -1498,8 +1498,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: In this location, you can see engravings of VT's core values along with
-    the names of alumni who gave their lives in military service
+  m_text: A tour group spotted the hokie bird looking out on to the drill field deep
+    in thought reciting the 8 core values of Virginia Tech.
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
